@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class Shooting : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class Shooting : MonoBehaviour
     int currentMag;
     float nextTimeToFire;
     int[] ammoCount;
+
+    [SerializeField] private TextMeshProUGUI weaponText;
 
     void Start()
     {
@@ -63,6 +66,8 @@ public class Shooting : MonoBehaviour
         {
             EquipWeapon(2);
         }
+
+        UpdateUI();
     }
 
     void Shoot()
@@ -84,5 +89,10 @@ public class Shooting : MonoBehaviour
         {
             Debug.Log("Out of Ammo for " + currentWeapon.weaponName);
         }
+    }
+
+    void UpdateUI()
+    {
+        weaponText.text = "Weapon: " + currentWeapon.weaponName;
     }
 }
