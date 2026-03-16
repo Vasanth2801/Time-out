@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using TMPro;
 
 public class EnemySpawner : MonoBehaviour
 {
@@ -19,6 +20,8 @@ public class EnemySpawner : MonoBehaviour
     public int currentWave = 0;
     public bool countDownBegin;
 
+    public TextMeshProUGUI waveText;
+
     void Start()
     {
         countDownBegin = true;
@@ -26,6 +29,8 @@ public class EnemySpawner : MonoBehaviour
         {
             waves[i].enemiesCount = waves[i].enemies.Length;
         }
+
+        waveText.text = "Wave: " + currentWave.ToString();
     }
 
     void Update()
@@ -53,6 +58,8 @@ public class EnemySpawner : MonoBehaviour
             countDownBegin = true;
             currentWave++;
         }
+
+        waveText.text = "CurrentWave: " + currentWave.ToString();
     }
 
     IEnumerator SpawnWave()
