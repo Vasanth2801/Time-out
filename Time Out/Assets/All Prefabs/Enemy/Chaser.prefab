@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 8370643445321522160}
   - component: {fileID: 1824310336147395503}
   - component: {fileID: 7913046240702039856}
+  - component: {fileID: -1139151090979574010}
   m_Layer: 0
   m_Name: Chaser
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,6 +95,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Chaser
   speed: 2.9
   player: {fileID: 0}
+--- !u!114 &-1139151090979574010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2172285559965116913}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6dbe1d42473ff04184f6c7c64ed9db6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  maxHealth: 50
+  currentHealth: 0
 --- !u!1 &8002814919389474145
 GameObject:
   m_ObjectHideFlags: 0

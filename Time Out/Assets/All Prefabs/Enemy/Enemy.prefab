@@ -133,9 +133,10 @@ GameObject:
   - component: {fileID: 5492795397859821963}
   - component: {fileID: 5328278783839949053}
   - component: {fileID: 5837084572407824196}
+  - component: {fileID: 4754492813006096146}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -253,3 +254,17 @@ MonoBehaviour:
   fireRate: 1
   timer: 0
   firePoint: {fileID: 6471841372287362317}
+--- !u!114 &4754492813006096146
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7865413602535173637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6dbe1d42473ff04184f6c7c64ed9db6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
+  maxHealth: 50
+  currentHealth: 0
