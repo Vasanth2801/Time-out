@@ -21,6 +21,7 @@ public class EnemySpawner : MonoBehaviour
     public bool countDownBegin;
 
     public TextMeshProUGUI waveText;
+    [SerializeField] private GameObject winScreen;
 
     void Start()
     {
@@ -37,6 +38,7 @@ public class EnemySpawner : MonoBehaviour
     {
         if(currentWave >= waves.Length)
         {
+            winScreen.SetActive(true);
             Debug.Log("All Waves Completed");
             return;
         }
