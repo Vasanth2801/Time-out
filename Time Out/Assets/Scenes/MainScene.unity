@@ -811,6 +811,11 @@ MonoBehaviour:
   bulletForce: 20
   pooler: {fileID: 1639614438}
   firePoint: {fileID: 1612101094}
+  weapons:
+  - {fileID: 11400000, guid: 612cc5c979eb47b4dbfc7a6042e10577, type: 2}
+  - {fileID: 11400000, guid: 93b684878ec00e94a998ce314313e53d, type: 2}
+  - {fileID: 11400000, guid: e207fe30149a21b488a54d60feec29bf, type: 2}
+  currentWeaponIndex: 0
 --- !u!1 &1612101093
 GameObject:
   m_ObjectHideFlags: 0
