@@ -13505,6 +13505,7 @@ MonoBehaviour:
   currentWave: 0
   countDownBegin: 0
   waveText: {fileID: 281666396}
+  winScreen: {fileID: 1447285490}
 --- !u!1 &1878649302
 GameObject:
   m_ObjectHideFlags: 0
