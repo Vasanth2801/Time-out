@@ -887,8 +887,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjectPooler
   pools:
-  - objectTag: Bullet
-    prefab: {fileID: 0}
+  - objectTag: B
+    prefab: {fileID: 4647206023144435949, guid: 98831941823bfec468105b6a30a7a851, type: 3}
     size: 40
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

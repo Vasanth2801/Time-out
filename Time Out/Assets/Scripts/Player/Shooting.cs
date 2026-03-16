@@ -19,7 +19,7 @@ public class Shooting : MonoBehaviour
 
     void Shoot()
     {
-        GameObject bullet = pooler.SpawnFromPools("Bullet", firePoint.position, firePoint.rotation);
+        GameObject bullet = pooler.SpawnFromPools("B", firePoint.position, firePoint.rotation);
         Rigidbody2D rb = bullet.GetComponent<Rigidbody2D>();
         rb.AddForce(transform.right * bulletForce, ForceMode2D.Impulse);
     }

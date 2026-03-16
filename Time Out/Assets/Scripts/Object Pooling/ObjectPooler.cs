@@ -35,11 +35,11 @@ public class ObjectPooler : MonoBehaviour
 
     public GameObject SpawnFromPools(string poolName, Vector3 position, Quaternion rotation)
     {
-        GameObject objToSpawn = poolsOfDictionary[tag].Dequeue();
+        GameObject objToSpawn = poolsOfDictionary[poolName].Dequeue();
         objToSpawn.SetActive(true);
         objToSpawn.transform.position = position;
         objToSpawn.transform.rotation = rotation;
-
+        poolsOfDictionary[poolName].Enqueue(objToSpawn);
         return objToSpawn;
     }
 }
